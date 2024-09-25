@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Complaint - Justice Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Justice Connect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lawyer-directory.html">Lawyer Directory</a></li>
+                <li><a href="case-status.html">Case Status</a></li>
+                <li><a href="complaint.html">File FIR/Complaint</a></li>
+                <li><a href="booking.html">Book Advocate</a></li>
+                <li><a href="sections.html">IPC Sections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>File an FIR Complaint</h2>
+            <p>Fill out the form below to file an official FIR complaint. Make sure to provide accurate information to avoid delays in processing.</p>
+
+            <form id="complaint-form">
+                <!-- User Details -->
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+                </fieldset>
+
+                <!-- Complaint Details -->
+                <fieldset>
+                    <legend>Complaint Information</legend>
+
+                    <label for="complaint-type">Type of Complaint:</label>
+                    <select id="complaint-type" name="complaint-type" required>
+                        <option value="" disabled selected>Select complaint type</option>
+                        <option value="theft">Theft</option>
+                        <option value="assault">Assault</option>
+                        <option value="fraud">Fraud</option>
+                        <option value="harassment">Harassment</option>
+                        <option value="other">Other</option>
+                         <!-- Add more -->
+                    </select>
+
+                    <label for="incident-date">Date of Incident:</label>
+                    <input type="date" id="incident-date" name="incident-date" required>
+
+                    <label for="incident-location">Location of Incident:</label>
+                    <input type="text" id="incident-location" name="incident-location" placeholder="Enter the location of incident" required>
+
+                    <label for="complaint-description">Description of Complaint:</label>
+                    <textarea id="complaint-description" name="complaint-description" placeholder="Provide a detailed description of the incident" rows="5" required></textarea>
+                </fieldset>
+
+                <!-- Submit Form -->
+                <button type="submit">Submit Complaint</button>
+            </form>
+
+            <div id="form-status"></div> <!-- This will display status messages like success or errors -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Justice Connect. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

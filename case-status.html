@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Status - Justice Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Justice Connect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lawyer-directory.html">Lawyer Directory</a></li>
+                <li><a href="case-status.html">Case Status</a></li>
+                <li><a href="complaint.html">File FIR/Complaint</a></li>
+                <li><a href="booking.html">Book Advocate</a></li>
+                <li><a href="sections.html">IPC Sections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Check Case Status</h2>
+            <form id="case-status-form">
+                <label for="case-id">Enter Case ID:</label>
+                <input type="text" id="case-id" name="case-id" required>
+                <button type="submit">Check Status</button>
+            </form>
+            <div id="case-status-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Justice Connect. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

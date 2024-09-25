@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Directory - Justice Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Justice Connect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lawyer-directory.html">Lawyer Directory</a></li>
+                <li><a href="case-status.html">Case Status</a></li>
+                <li><a href="complaint.html">File FIR/Complaint</a></li>
+                <li><a href="booking.html">Book Advocate</a></li>
+                <li><a href="sections.html">IPC Sections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lawyer Directory</h2>
+            <input type="text" id="search" placeholder="Search by name or specialization...">
+            <div id="lawyer-list">
+                <!-- Sample Lawyer Entries -->
+
+           <!-- Lawyer 1 -->
+                  <div class="lawyer">
+                    <h3>Jane Smith</h3>
+                    <p>Specialization: Family Law</p>
+                    <p>Experience: 10 years</p>
+                    <p>Location: New York, NY</p>
+                    <p>Cases Solved: 200+</p>
+                    <p>Contact: jane.smith@example.com</p>
+                    <button onclick="bookConsultation('Jane Smith')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 2 -->
+                <div class="lawyer">
+                    <h3>John Doe</h3>
+                    <p>Specialization: Criminal Law</p>
+                    <p>Experience: 8 years</p>
+                    <p>Location: Los Angeles, CA</p>
+                    <p>Cases Solved: 150+</p>
+                    <p>Contact: john.doe@example.com</p>
+                    <button onclick="bookConsultation('John Doe')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 3 -->
+                <div class="lawyer">
+                    <h3>Sara Lee</h3>
+                    <p>Specialization: Corporate Law</p>
+                    <p>Experience: 12 years</p>
+                    <p>Location: Chicago, IL</p>
+                    <p>Cases Solved: 300+</p>
+                    <p>Contact: sara.lee@example.com</p>
+                    <button onclick="bookConsultation('Sara Lee')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 4 -->
+                <div class="lawyer">
+                    <h3>Mike Patel</h3>
+                    <p>Specialization: Civil Litigation</p>
+                    <p>Experience: 9 years</p>
+                    <p>Location: Houston, TX</p>
+                    <p>Cases Solved: 180+</p>
+                    <p>Contact: mike.patel@example.com</p>
+                    <button onclick="bookConsultation('Mike Patel')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 5 -->
+                <div class="lawyer">
+                    <h3>Priya Nair</h3>
+                    <p>Specialization: Environmental Law</p>
+                    <p>Experience: 15 years</p>
+                    <p>Location: San Francisco, CA</p>
+                    <p>Cases Solved: 250+</p>
+                    <p>Contact: priya.nair@example.com</p>
+                    <button onclick="bookConsultation('Priya Nair')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 6 -->
+                <div class="lawyer">
+                    <h3>David Williams</h3>
+                    <p>Specialization: Immigration Law</p>
+                    <p>Experience: 11 years</p>
+                    <p>Location: Miami, FL</p>
+                    <p>Cases Solved: 220+</p>
+                    <p>Contact: david.williams@example.com</p>
+                    <button onclick="bookConsultation('David Williams')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 7 -->
+                <div class="lawyer">
+                    <h3>Linda Chen</h3>
+                    <p>Specialization: Intellectual Property Law</p>
+                    <p>Experience: 7 years</p>
+                    <p>Location: Seattle, WA</p>
+                    <p>Cases Solved: 100+</p>
+                    <p>Contact: linda.chen@example.com</p>
+                    <button onclick="bookConsultation('Linda Chen')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 8 -->
+                <div class="lawyer">
+                    <h3>Tom Brown</h3>
+                    <p>Specialization: Tax Law</p>
+                    <p>Experience: 14 years</p>
+                    <p>Location: Boston, MA</p>
+                    <p>Cases Solved: 230+</p>
+                    <p>Contact: tom.brown@example.com</p>
+                    <button onclick="bookConsultation('Tom Brown')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 9 -->
+                <div class="lawyer">
+                    <h3>Emily Watson</h3>
+                    <p>Specialization: Employment Law</p>
+                    <p>Experience: 10 years</p>
+                    <p>Location: Austin, TX</p>
+                    <p>Cases Solved: 170+</p>
+                    <p>Contact: emily.watson@example.com</p>
+                    <button onclick="bookConsultation('Emily Watson')">Book Consultation</button>
+                </div>
+
+                <!-- Lawyer 10 -->
+                <div class="lawyer">
+                    <h3>Ravi Kumar</h3>
+                    <p>Specialization: Real Estate Law</p>
+                    <p>Experience: 6 years</p>
+                    <p>Location: Denver, CO</p>
+                    <p>Cases Solved: 90+</p>
+                    <p>Contact: ravi.kumar@example.com</p>
+                    <button onclick="bookConsultation('Ravi Kumar')">Book Consultation</button>
+                </div>
+
+                <!-- Add more lawyers as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Justice Connect. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

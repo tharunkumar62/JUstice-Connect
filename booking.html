@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Advocate - Justice Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Justice Connect</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lawyer-directory.html">Lawyer Directory</a></li>
+                <li><a href="case-status.html">Case Status</a></li>
+                <li><a href="complaint.html">File FIR/Complaint</a></li>
+                <li><a href="booking.html">Book Advocate</a></li>
+                <li><a href="sections.html">IPC Sections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Book an Advocate</h2>
+            <form id="booking-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="lawyer">Select Advocate:</label>
+                <select id="lawyer" name="lawyer" required>
+                    <option value="">--Select--</option>
+                    <option value="John Doe">John Doe</option>
+                    <option value="Jane Smith">Jane Smith</option>
+                    <option value="Sara Lee">Sara Lee</option>
+                    <option value="Mike Patel">Mike Patel</option>
+                    <option value="Priya Nair">Priya Nair</option>
+                    <option value="David Williams">David Williams</option>
+                    <option value="Linda Chen">Linda Chen</option>
+                    <option value="Tom Brown">Tom Brown</option>
+                    <option value="Emily Watson">Emily Watson</option>
+                    <option value="Ravi Kumar">Ravi Kumar</option>
+                    <!-- Add more options as per the directory -->
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="booking-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Justice Connect. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
